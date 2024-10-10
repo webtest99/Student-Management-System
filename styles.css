@@ -1,0 +1,139 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4a90e2; /* Primary color */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.logo {
+    width: 100px; /* Adjust logo size */
+    display: block;
+    margin: 10px auto;
+}
+
+nav {
+    background-color: #ffffff; /* Secondary color */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #4a90e2; /* Primary color */
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #4a90e2; /* Hover effect */
+    color: #fff;
+    border-radius: 5px;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff; /* White background for content area */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    font-weight: 600; /* Bold headings */
+}
+
+h1 {
+    font-size: 2.5em; /* Larger for main title */
+}
+
+h2 {
+    font-size: 1.8em; /* Secondary headings */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 1em;
+}
+
+button {
+    padding: 10px;
+    background-color: #4a90e2; /* Primary button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #357ab8; /* Darker shade for hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4a90e2; /* Matching footer color */
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav {
+        padding: 10px;
+    }
+
+    nav a {
+        display: block; /* Stack links on smaller screens */
+        margin: 5px 0;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em; /* Adjust heading size */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Adjust secondary heading size */
+    }
+}
